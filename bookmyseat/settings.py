@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=j8+!270bi^#+ar2=w*auq)2^j+@+p_$1-w8%m1x_*1-5c_xg$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -85,7 +85,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default']=dj_database_url.parse('postgresql://book_my_show_up8c_user:76tWbWAJdx20pbzSesxSRecpCvk6UI4J@dpg-d1qi69er433s73edres0-a.oregon-postgres.render.com/book_my_show_up8c')
+DATABASES['default'] = dj_database_url.parse('postgresql://book_my_show_up8c_user:76tWbWAJdx20pbzSesxSRecpCvk6UI4J@dpg-d1qi69er433s73edres0-a.oregon-postgres.render.com/book_my_show_up8c')
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
