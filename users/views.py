@@ -19,7 +19,7 @@ def register(request):
             user = authenticate(username=username,password=password) #Authenticates the user (verifies that credentials are valid).
             login(request ,user)    # Logs the user in if authentication is successful.
 
-        return render('profile')  #Redirects the user to the 'profile' page after successful login.
+        return redirect('profile')  #Redirects the user to the 'profile' page after successful login.
     
     else:
         form=UserRegisterForm()            #If it''s not a POST (i.e., a GET request), it means the user is visiting the page for the first time. A blank registration form is shown.
