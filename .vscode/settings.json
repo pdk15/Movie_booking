@@ -1,0 +1,9 @@
+{
+    "json.schemas": [
+        
+    ],
+    "emmet.includeLanguages": {
+  "django-html": "html"
+}
+
+}
